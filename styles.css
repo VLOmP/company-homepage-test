@@ -248,8 +248,12 @@ h3 {
     .team {
         padding-top: 40px;
     }
+    .team .team-up {
+        height: auto;
+        padding-top: 5px;
+    }
     .team .team-up > p {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     .team .team-down .team-all {
         width: 100%;
