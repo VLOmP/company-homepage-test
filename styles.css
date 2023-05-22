@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+}
+
+/* HEADER */
+header nav {
+    width: 100%;
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+header nav a {
+    color: black;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+/* HOME */
+.home {
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-color: brown;
+    display: flex;
+
+}
+.home .home-text {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    padding: 100px 0;
+    padding-left: 70px;
+    text-align: left;
+}
+.home .home-text h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.home .home-text p {
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+.home .home-text p a {
+    color: #66f;
+}
+.home .home-text button {
+    background-color: #000;
+    color: #fff;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.home .home-img {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+
+@media all and (max-width: 768px) {
+    .home .home-text{
+        padding: 80px 0;
+        padding-left: 70px;
+    }
+    .home .home-text h2 {
+        font-size: 2.5rem;
+    }
+    .home .home-text p {
+        padding-right: 0;
+    }
+}
+@media all and (max-width: 425px) {
+    .home .home-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .home .home-img {
+        display: none;
+    }
+}
+
+
+/* ABOUT */
+.about {
+    width: 100%;
+    height: 800px;
+}
+.about .about-up {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.about .about-up .about-up-text {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+.about .about-up .about-up-text h3 {
+    padding-bottom: 15px;
+}
+.about .about-up .quality {
+    background-color: #000;
+    color: #fff;
+}
+.about .about-up .growth {
+    background-color: aqua;
+    color: #fff;
+}
+.about .about-up .competitive {
+    background-color: #55f;
+    color: #fff;
+}
+
+.about .about-down {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18% 20%;
+}
+.about .about-down i {
+    font-size: 80px;
+}
+.about .about-down h3 {
+    margin: 35px 0;
+}
+.about .about-down p {
+    margin-bottom: 35px;
+}
+.about .about-down button {
+    background-color: #fff;
+    color: #000;
+    padding: 13px 25px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 425px) {
+    .about {
+        height: 1400px;
+    }
+    .about .about-up {
+        height: 900px;
+        flex-direction: column;
+    }
+    .about .about-up .about-up-text {
+        width: 100%;
+    }
+}
+
+
+/* TEAM */
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+.team .team-up {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20%;
+}
+.team .team-up h3 {
+    margin-bottom: 30px;
+}
+.team .team-down {
+    width: 100%;
+    padding: 20px 50px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team .team-down .team-all {
+    width: 33.33%;
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.team .team-down .team-all img {
+    width: 200px;
+    height: 240px;
+    background-color: #55f;
+    object-fit: contain;
+}
+.team .team-down .team-all .person-all-text {
+    width: 160px;
+    height: 170px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -50px
+}
+.team .team-down .team-all .person-all-text p {
+    font-size: 12px;
+}
+.team .team-down .team-all .person-all-text span,
+.team .team-down .team-all .person-all-text a {
+    color: #888;
+}
+
+
+@media all and (max-width:425px) {
+    .team {
+        padding-top: 40px;
+    }
+    .team .team-up > p {
+        padding-bottom: 30px;
+    }
+    .team .team-down .team-all {
+        width: 100%;
+    }
+}
+
+
+/* SERVICES */
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.services .services-up {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services .services-up h3 {
+    margin-bottom: 30px;
+}
+
+
+.services .services-down {
+    width: 100%;
+    padding: 20px 50px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services .services-down .services-all {
+    width: 33.33%;
+    height: 250px;
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.services .services-down .services-all img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #55f;
+    object-fit: contain;
+}
+.services .services-down .services-all h4 {
+    padding: 25px 0;
+}
+.services .services-down button {
+    background-color: #fff;
+    color: #000;
+    margin-top: 40px;
+    padding: 13px 25px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+@media all and (max-width:768px) {
+    .services .services-down .services-all {
+        margin-bottom: 40px;
+    }
+    .services .services-down button {
+        margin-top: 0;
+    }
+}
+@media all and (max-width: 425px) {
+    .services .services-up {
+        text-align: center;
+        padding: 0 40px;
+    }
+    .services .services-down .services-all {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0 0 0;
+}
+footer a button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer a button i {
+    font-size: 20px;
+}
+footer p {
+    padding: 15px 0;
+}
